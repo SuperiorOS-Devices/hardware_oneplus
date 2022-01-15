@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2021-2022 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -14,7 +14,7 @@ class ButtonSettingsActivity : CollapsingToolbarBaseActivity() {
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         fragmentManager.beginTransaction().replace(
-            com.android.settingslib.collapsingtoolbar.R.id.content_frame,
+            R.id.content_frame,
             ButtonSettingsFragment()
         ).commit()
     }

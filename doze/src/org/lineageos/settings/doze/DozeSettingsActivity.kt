@@ -14,7 +14,7 @@ class DozeSettingsActivity : CollapsingToolbarBaseActivity() {
         super.onCreate(savedInstanceState)
         fragmentManager
             .beginTransaction()
-            .replace(com.android.settingslib.collapsingtoolbar.R.id.content_frame, DozeSettingsFragment(), TAG)
+            .replace(R.id.content_frame, DozeSettingsFragment(), TAG)
             .commit()
     }
 
